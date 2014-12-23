@@ -1,0 +1,4454 @@
+@font-face {
+    font-family: 'playbold';
+    src: url('../fonts/play-bold-webfont.eot');
+    src: url('../fonts/play-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/play-bold-webfont.woff') format('woff'), url('../fonts/play-bold-webfont.ttf') format('truetype'), url('../fonts/play-bold-webfont.svg#playbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playregular';
+    src: url('../fonts/play-regular-webfont.eot');
+    src: url('../fonts/play-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/play-regular-webfont.woff') format('woff'), url('../fonts/play-regular-webfont.ttf') format('truetype'), url('../fonts/play-regular-webfont.svg#playregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('../fonts/OpenSans-LightItalic-webfont.eot');
+    src: url('../fonts/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-LightItalic-webfont.woff') format('woff'), url('../fonts/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('../fonts/OpenSans-LightItalic-webfont.svg#open_sanslight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot');
+    src: url('../fonts/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-ExtraBold-webfont.woff') format('woff'), url('../fonts/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-ExtraBold-webfont.svg#open_sansextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/OpenSans-Semibold-webfont.eot');
+    src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.eot");
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.eot");
+    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer a, footer a i, header a, .example-pager a, .grayBtn, .orangeBtn, .orangeLink, .newsList a, header .navbar .logo, .subNavWrapper .nav>li>a, .vinnyNewsList a, .customPagination ul>li>a, .customPagination ul>li>span, .boxesWrapper a, .msgIcon, .nextBtn, .topBtn, .logosContainer a, [class*="span"], .container {
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+a:focus, a:active {
+    outline: 0;
+}
+
+body {
+    background: #181817 !important;
+    color: #fff;
+    font: normal 14px/20px 'open_sanslight';
+}
+
+* {
+    -webkit-animation-delay: 0.1s;
+    -webkit-animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+}
+
+img {
+    -webkit-animation-duration: 0s;
+    -webkit-animation-name: inherit;
+    -webkit-animation-delay: 0;
+    -webkit-animation-iteration-count: 0;
+    -webkit-animation-timing-function: 0;
+}
+
+@-webkit-keyframes fontfix {
+   from { opacity: 1; }
+   to   { opacity: 1; }
+}
+
+.home {
+    padding-top: 0;
+}
+
+.homeImageWrapper, .homeIphoneImageWrapper {
+    width: 100% !important;
+}
+
+.leftSide {
+    float: left;
+    width: 50% !important;
+    height: 100%;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.leftSide img {
+    left: auto !important;
+    right: 0 !important;
+}
+
+.rightSide {
+    float: right;
+    width: 50% !important;
+    height: 100%;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.rightSide img {
+    left: 0 !important;
+}
+
+.vinnyLogo {
+    padding: 26px 0 34px;
+    display: block;
+    text-align: center;
+    background: #111;
+}
+
+.vinnyLogo a, .vinnyLogo img {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #424242;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.textureBg {
+    padding: 60px 0;
+    background: url("../img/texture-bg.png") 0 0 repeat;
+    text-align: center;
+}
+
+.media {
+    margin: 0 auto;
+    list-style: none;
+    font-size: 11px;
+    text-transform: uppercase;
+    display: inline-block;
+    overflow: visible;
+}
+
+.media li {
+    display: inline-block;
+    margin-left: 60px;
+    width: 57px;
+}
+
+.media li:first-child {
+    margin-left: 0;
+}
+
+.media a {
+    display: block;
+    text-align: center;
+}
+
+.media a i {
+    background: url("../img/media-icons.png") 0 0 repeat;
+    display: block;
+    width: 57px;
+    padding-top: 62px;
+    color: #3d3d3d;
+    text-align: center;
+}
+
+.media .facebook i {
+    background-position: 13px 0;
+}
+
+.media .facebook:hover i {
+    background-position: 13px -93px;
+}
+
+.media .twitter i {
+    background-position: -57px 0;
+}
+
+.media .twitter:hover i {
+    background-position: -57px -93px;
+}
+
+.media .instagram i {
+    background-position: -137px 0;
+}
+
+.media .instagram:hover i {
+    background-position: -137px -93px;
+}
+
+.bottomBar {
+    color: #424242;
+    padding: 20px 0 30px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.bottomBar span {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+.bottomBar small {
+    display: block;
+    margin-top: 10px;
+}
+
+/* ----------------------------------------
+    BrowserBlast by @markgdyr
+    markgoodyear.com
+---------------------------------------- */
+#browserblast {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #D4C790;
+    font: normal 18px/40px 'playbold';
+    color: #6d6647;
+    text-align: center;
+    background: #FAF4AF;
+}
+
+#browserblast a {
+    color: #ef4925;
+}
+
+#browserblast a:hover {
+    color: #cd3919;
+}
+
+.unsupported-browser {
+    margin-top: 42px;
+}
+
+.contactForm .controls-row .keg_size[class*="span"] {
+    margin: 6px 0 0;
+    border: none;
+    font-weight: bold;
+}
+
+/* Home page */
+
+.fetch-tweets-media {
+    margin-top: 10px;
+}
+
+.innerHeader .navbar, .philanthropistWrapper .fnInnerHeader .navbar {
+    border-bottom: 5px solid #ef4925;
+}
+
+.innerHeader .navbar .logo {
+    background: url("../img/logo-icon.png") 0 24px no-repeat;
+}
+
+.topBar {
+    /*height: 29px;*/
+}
+
+#teamLogoMenu .tmContainer {
+    width: 834px !important;
+}
+
+.topBar .nhlLogo {
+    background: url("../img/nhl-logo.jpg") 0 0 repeat-x;
+    width: 232px;
+    height: 29px;
+    float: left;
+    display: block;
+}
+
+.navbarWrapper {
+    background: url("../img/black-transparency.png") 0 0 repeat;
+    padding-top: 18px;
+}
+
+.philanthropistWrapper .navbarWrapper {
+    background: url("../img/white-transparency.png") 0 0 repeat;
+    padding-top: 16px;
+}
+
+.philanthropistWrapper .fnInnerHeader .navbarWrapper {
+    padding-top: 7px;
+}
+
+.innerHeader .navbarWrapper {
+    padding-top: 16px;
+}
+
+header .navbar {
+    background: #000;
+    margin: 0;
+}
+
+.innerHeader .navbar {
+    margin: 0;
+}
+
+.topBarWrapper {
+    overflow: visible;
+}
+
+.innerHeader .topBarWrapper {
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+header .navbar .container {
+    width: 940px;
+}
+
+header .navbar .nav {
+    text-transform: uppercase;
+    font-family: 'playbold';
+    margin: 0 0 0 10px;
+    background: url("../img/nav-separator.png") left center no-repeat;
+}
+
+header .navbar .logo {
+    background: url("../img/vinny40Logo.png") 0 0 no-repeat;
+    width: 171px;
+    height: 76px;
+    display: block;
+    float: left;
+    margin: -6px 0 0;
+}
+
+header .navbar .logo a {
+    display: block;
+    width: 171px;
+    height: 76px;
+}
+
+header .navbar .logo a:focus, header .navbar .logo a:active {
+    background: none;
+}
+
+header .navbar .nav>li {
+    background: url("../img/nav-separator.png") right center no-repeat;
+    position: relative;
+}
+
+header .navbar .nav>li>a {
+    padding: 30px 26px;
+}
+
+.innerHeader .navbar .logo, .fnInnerHeader .navbar .logo {
+    margin: -30px 0 0;
+    width: 140px;
+}
+
+.innerHeader .navbar .logo a, .fnInnerHeader .navbar .logo a {
+    width: 140px;
+}
+
+.navbar-inverse .nav .active>a, .navbar-inverse .nav .active>a:hover, .navbar-inverse .nav .active>a:focus {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-inverse .nav .active:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    content: "";
+    vertical-align: middle;
+    border-style: solid;
+    border-color: #ef4925 transparent transparent;
+    border-width: 7px 7px 0 7px;
+    position: absolute;
+    left: 46%;
+    bottom: -12px;
+}
+
+.slider img {
+    width: 100%;
+    height: 516px;
+    display: block;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.cycle-loading, .videoTabBox, .homeImageWrapper, .homeIphoneImageWrapper {
+    background: url('../img/ajax-loader.gif') center center no-repeat;
+}
+
+.sliderOuter {
+    position: relative;
+    margin-top: 30px;
+}
+
+.sliderOuter .container {
+    position: relative;
+    top: -417px;
+    z-index: 9999;
+}
+
+.statsBoxOuter {
+    width: 356px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.example-pager {
+    /*width: 100px;*/
+    position: absolute;
+    left: 0;
+    top: 390px;
+    text-indent: -9999px;
+}
+
+.example-pager a {
+    background: url("../img/sprite.png") 0 0 no-repeat;
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin-left: 4px;
+}
+
+.example-pager a:first-child {
+    margin-left: 0;
+}
+
+.example-pager .cycle-pager-active {
+    background-position: -16px 0;
+}
+
+.photoGallery .example-pager a {
+    margin-top: 0;
+}
+
+.statsBox {
+    padding: 18px 18px 0;
+    border-top: 3px solid #ef4925;
+    font-family: 'playbold';
+    width: 320px;
+    background-color: #282727;
+    background-image: -moz-linear-gradient(top, #121111, #282727);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#121111), to(#282727));
+    background-image: -webkit-linear-gradient(top, #121111, #282727);
+    background-image: -o-linear-gradient(top, #121111, #282727);
+    background-image: linear-gradient(to bottom, #121111, #282727);
+    background-repeat: repeat-x;
+    min-height: 417px;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.statsBox h2 {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    margin: 6px 0 8px;
+    background: url("../img/hlinebig.png") left bottom no-repeat;
+    padding-bottom: 8px;
+}
+
+.vinnyStats img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-right: 10px;
+    border: 2px solid #e2e2e2;
+}
+
+.vinnyStats .vinnyInfo {
+    float: left;
+    width: 200px;
+}
+
+.vinnyStats .vinnyInfo span {
+    font-family: 'playregular';
+    color: #b6b6b6;
+    margin-left: 8px;
+}
+
+.vinnyStats .vinnyInfo table span {
+    margin-left: 0;
+}
+
+.vinnyStats .vinnyInfo h3 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #ff5a00;
+    margin: 4px 0 4px 8px;
+    font-weight: normal;
+}
+
+.vinnyStats table {
+    font-family: 'playregular';
+    margin-bottom: 0;
+}
+
+.vinnyStats {
+    margin-bottom: 10px;
+}
+
+.vinnyStats thead {
+    font-family: 'playbold';
+    color: #b6b6b6;
+}
+
+.vinnyStats .table th, .vinnyStats .table td {
+    border-top: none;
+    background: url("../img/vlinesmall.png") left center no-repeat;
+    padding: 2px;
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+}
+
+.vinnyStats .table th:first-child, .vinnyStats .table td:first-child {
+    background: none;
+}
+
+.vinnyStats .table tr {
+    background: url("../img/hlinemedium.png") 0 0 no-repeat;
+    display: block;
+}
+
+.plainText {
+    text-transform: capitalize;
+    font-family: 'playregular';
+}
+
+.plainText span {
+    display: inline-block;
+    color: #ea5302;
+    margin: 0 10px;
+}
+
+.statsBox .normalText {
+    font-family: 'playregular';
+}
+
+.mainVideo {
+    width: 326px;
+    height: 176px;
+    background: url("../img/video-shadow.jpg") left bottom no-repeat;
+    padding-bottom: 14px;
+}
+
+.statsShadow {
+    width: 357px;
+    height: 84px;
+    background: url("../img/stats-bottom.png") 0 0 no-repeat;
+}
+
+.blackTexture {
+    background: url("../img/black-texture.jpg") 0 0 repeat;
+}
+
+.homeTopBg {
+    background: url("../img/home-top-bg.png") top center repeat-x;
+}
+
+.heading {
+    font: normal 28px/32px 'playbold';
+    margin: 34px 0;
+    text-transform: uppercase;
+}
+
+.listing {
+    text-transform: uppercase;
+    font-family: 'open_sansregular';
+    color: #a5a5a5;
+}
+
+.listing thead {
+    font: normal 18px/20px 'playregular';
+    background: #040404;
+    color: #d6d6d6;
+}
+
+.listing thead th {
+    padding: 12px 8px;
+}
+
+.listing thead th:first-child {
+    padding: 12px 8px 12px 42px;
+}
+
+.listing thead th:last-child {
+    padding: 12px 40px 12px 12px;
+}
+
+.listing tr {
+    background: url("../img/row-bg.png") center bottom no-repeat;
+    display: block;
+}
+
+.listing th, .listing td {
+    border-top: none;
+    display: inline-block;
+    width: 16%;
+}
+
+.listing th:first-child, .listing td:first-child {
+    padding: 8px 8px 8px 42px;
+}
+
+.listing th:last-child, .listing td:last-child {
+    padding: 8px 40px 8px 8px;
+}
+
+.grayBtn {
+    font: normal 12px/14px 'open_sansextrabold';
+    text-shadow: 1px 1px 1px #fff;
+    display: inline-block;
+    padding: 6px 32px;
+    background: #bbb;
+    text-align: center;
+    color: #000;
+    -webkit-box-shadow: 1px 1px 1px #8b8b8b;
+    -moz-box-shadow: 1px 1px 1px #8b8b8b;
+    box-shadow: 1px 1px 1px #8b8b8b;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.grayBtn:hover {
+    color: #000;
+    text-decoration: none;
+    background: #9a9999;
+}
+
+.centerBtn {
+    text-align: center;
+}
+
+.orangeBtn {
+    font: normal 18px/20px 'open_sansextrabold';
+    text-shadow: 1px 1px 1px #ff6341;
+    display: inline-block;
+    padding: 12px 42px;
+    background: #ef4925;
+    text-align: center;
+    color: #651200;
+    -webkit-box-shadow: 1px 1px 1px #d02500;
+    -moz-box-shadow: 1px 1px 1px #d02500;
+    box-shadow: 1px 1px 1px #d02500;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+
+.orangeBtn:hover {
+    color: #651200;
+    text-decoration: none;
+    background: #cc3716;
+}
+
+.boxesWrapper {
+    background: url("../img/page-divider.png") top center no-repeat;
+    margin: 36px 0;
+    padding-top: 14px;
+}
+
+.boxesWrapper .span4 {
+    background: #080808;
+    padding: 16px 18px 10px;
+    min-height: 450px;
+    width: 266px;
+}
+
+#tweets {
+    max-height: 335px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.boxesWrapper .row {
+    margin-left: -15px;
+}
+
+.boxesWrapper [class*="span"] {
+    margin-left: 15px;
+}
+
+.mediumHeading, .btmLine {
+    font: normal 21px/24px 'playbold';
+    text-transform: uppercase;
+    margin: 0;
+    background: url("../img/heading-border.png") left bottom no-repeat;
+    padding-bottom: 8px;
+}
+
+.btmLine {
+    margin-bottom: 25px;
+    padding-bottom: 6px;
+}
+
+.newsList {
+    margin: 30px 0 0;
+    list-style: none;
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.newsList li {
+    background: url("../img/dt-line.png") left bottom repeat-x;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    line-height: 16px;
+}
+
+.newsList h5 {
+    font: normal 14px/18px 'playbold';
+    text-transform: uppercase;
+    margin: 0 0 2px;
+    color: #fff;
+}
+
+.newsList em {
+    font-family: 'open_sanslight_italic';
+    display: block;
+}
+
+.orangeLink, .newsList a, .moreNews {
+    font: normal 12px/14px 'playbold';
+    color: #ef4925;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.orangeLink:focus, .orangeLink:active, .newsList a:focus, .newsList a:active, .moreNews:focus, .moreNews:active, .boxesWrapper a:focus, .boxesWrapper a:active, .vinnyNewsList a:focus, .vinnyNewsList a:active, footer a:focus, footer a:active {
+    background-color: transparent;
+}
+
+.boxesWrapper a, .vinnyNewsList a {
+    color: #ef4925;
+    text-decoration: underline;
+}
+
+.orangeLink:hover, .newsList a:hover, .vinnyNewsList a:hover, .boxesWrapper a:hover, .moreNews:hover {
+    color: #cd3919;
+}
+
+.boxesWrapper .execphpwidget a, .boxesWrapper .execphpwidget a:hover {
+    text-decoration: none;
+    font-family: 'open_sanslight_italic';
+}
+
+.newsList a {
+    font: normal 12px/16px 'open_sanslight';
+    text-transform: capitalize;
+}
+
+/*.execphpwidget {
+    font: normal 12px/16px 'open_sanslight';
+}*/
+
+.mediatext {
+    background: url("../img/sprite.png") 0 -19px no-repeat;
+    display: inline-block;
+    width: 137px;
+    height: 25px;
+}
+
+.mediatext.facebook {
+    background-position: 0 -19px;
+}
+
+.mediatext.twitter {
+    background-position: 0 -59px;
+}
+
+.followBtn {
+    background: url("../img/sprite.png") -54px -96px no-repeat;
+    display: block;
+    width: 159px;
+    height: 39px;
+    margin-top: 22px;
+}
+
+.getConnected {
+    font-family: 'playbold';
+    color: #bdbdbd;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.getConnected a {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.searchForm {
+    position: relative;
+    float: left;
+    margin: 16px 0 0 20px;
+}
+
+.innerHeader .searchForm {
+    margin-top: 7px;
+}
+
+.searchForm input {
+    position: absolute;
+    top: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #ababab;
+    border-width: 0 0 1px 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    width: 0;
+    color: #fff;
+    font-family: 'playregular';
+    overflow: hidden;
+    display: none;
+    left: 24px;
+}
+
+.searchForm input:focus, .searchForm input:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+    border-color: #ccc;
+}
+
+.searchForm .searchBtn, .searchForm .searchIcon, .submitIcon, .searchForm .searchBtnSmall {
+    background: url("../img/search-icon.png") 0 0 no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 10px;
+    left: 170px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.searchForm .searchBtn {
+    display: none;
+}
+
+.nextBtn, .topBtn {
+    background: url("../img/sprite.png") 0 -96px no-repeat;
+    display: block;
+    width: 44px;
+    height: 44px;
+    margin: 40px auto 30px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.nextBtn:hover, .topBtn:hover, .prevSlider:hover, .thumbPagination:hover {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity = 80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.bottomBorder {
+    border-style: solid;
+    border-color: #242424;
+    border-width: 0 2px 2px 2px;
+    height: 19px;
+    margin: 10px 0 30px;
+}
+
+/* Meet vinny */
+
+.meetVinny, .newsPage {
+    background: url("../img/gray-texture.jpg") 0 0 repeat;
+    min-height: 500px;
+    position: relative;
+    font-size: 12px;
+    line-height: 16px;
+    color: #b6b6b6;
+    z-index: 1;
+}
+
+.moreNewsPage {
+    background: url("../img/black-texture.jpg") 0 0 repeat;
+}
+
+.patchHeading {
+    background: url("../img/heading-bg.png") 0 0 no-repeat;
+    margin: 0 0 0 -26px;;
+    color: #fff;
+    padding: 40px 0 0 40px;
+    min-height: 66px;
+}
+
+.meetVinnyContent {
+    margin: 0 20px;
+}
+
+.meetVinnyContent p {
+    margin-bottom: 14px;
+}
+
+.withIcons i {
+    background: url("../img/sprite.png") 0 0 no-repeat;
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+    margin: 0 8px 0 20px;
+    float: left;
+}
+
+.withIcons .rimouski {
+    background-position: 0 -147px;
+}
+
+.withIcons .tampa {
+    background-position: -98px -147px;
+}
+
+.withIcons .akBars {
+    background-position: 0 -444px;
+}
+
+.withIcons .philadelphiaFlyers {
+    background-position: -98px -444px;
+}
+
+.withIcons div {
+    width: 520px;
+    margin-left: 20px;
+}
+
+.withIcons .fullWidthContent {
+    width: auto;
+}
+
+.withIcons h4 {
+    font: normal 21px/24px 'playbold';
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: #fff;
+    clear: none;
+}
+
+.shortContent {
+    width: 550px;
+}
+
+.shortContent .withIcons div {
+    width: 412px;
+}
+
+.awardsContainer {
+    text-align: center;
+    color: #fff;
+}
+
+.awardsContainer .heading {
+    margin: 50px 0 30px;
+}
+
+.awardsList {
+    font: normal 14px/20px 'playbold';
+    background: url("../img/content-seperator.png") top center no-repeat;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.awardsList i {
+    display: inline-block;
+    color: #ef4925;
+    margin: 0 10px;
+    font-style: normal;
+}
+
+.topTexture {
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url("../img/top-texture.png") 0 0 repeat-x;
+}
+
+.bottomTexture {
+    width: 100%;
+    height: 50px;
+    background: url("../img/bottom-texture.png") 0 0 repeat-x;
+}
+
+.rightTexture {
+    width: 92px;;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../img/right-texture.png") 0 0 repeat-y;
+}
+
+.leftTexture {
+    width: 72px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/left-texture.png") 0 0 repeat-y;
+}
+
+.meetVinny .container {
+    position: relative;
+}
+
+.vinnyPic {
+    display: block;
+    position: absolute;
+    top: 34px;
+    right: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    transform: none;
+    -ms-transform:none;
+    -webkit-transform:none;
+}
+
+/* Stats page */
+
+.subNavWrapper {
+    background: url("../img/sub-nav-shadow.png") left bottom repeat-x;
+    border-bottom: 1px solid #2b2b2b;
+    font: normal 16px/18px 'playbold';
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.subNavWrapper .nav {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.subNavWrapper .nav li {
+    margin-left: 10px;
+}
+
+.subNavWrapper .nav li:first-child {
+    margin-left: 0;
+}
+
+.subNavWrapper .nav-pills>li>a {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 14px 34px;
+    color: #999;
+    background: #1c1c1c;
+}
+
+.subNavWrapper .nav-pills>.active>a, .subNavWrapper .nav-pills>.active>a:hover, .subNavWrapper .nav>li>a:hover {
+    color: #d5d5d5;
+    background-color: #000;
+}
+
+.smallHeading {
+    font: normal 14px/18px 'playbold';
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.statsTable {
+    margin: 0 0 26px;
+    font: normal 12px/14px 'playregular';
+    background: #ececec;
+    color: #1c1b1b;
+    border: none;
+    text-transform: uppercase;
+}
+
+.statsTable thead {
+    background: #292929;
+    color: #fff;
+}
+
+.statsTable th, .statsTable td {
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    padding: 5px;
+    line-height: 16px;
+}
+
+.statsTable th, .statsTable td, .statsTable, .lastGames .table, .lastGames th, .lastGames td {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.statsTable thead th {
+    border: none;
+}
+
+.statsTable strong, .boldFont {
+    font-family: 'playbold';
+    font-style: normal;
+}
+
+.statsTable .grayBg {
+    background: #e1e1e1;
+}
+
+.stats .heading, .mediaPage .heading {
+    margin: 20px 0 0;
+}
+
+/* Media page */
+
+.mediaPage {
+    background: url("../img/gray-texture.jpg") 0 0 repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.mediaPage .subNavWrapper {
+    border-bottom-color: #4b4b4b;
+    background: none;
+    margin-bottom: 24px;
+}
+
+.topSideTexture {
+    width: 100%;
+    height: 441px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url("../img/media-bg.png") 0 0 repeat-x;
+}
+
+.bottomSideTexture {
+    width: 100%;
+    height: 115px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: url("../img/media-footer-bg.png") 0 0 repeat-x;
+}
+
+.aboveTexture {
+    background: url("../img/sub-nav-shadow2.png") 0 3px repeat-x;
+}
+
+.photoGallery {
+    background: #000;
+    padding: 12px;
+}
+
+.photoGallery ul {
+    margin: 0;
+    list-style: none;
+}
+
+.photoGallery div {
+    float: left;
+    width: 309px;
+}
+
+.photoGallery .middleColumn {
+    width: 280px;
+    margin: 0 9px;
+}
+
+.photoGallery .middleColumn img {
+    width: 280px;
+}
+
+.photoGallery a {
+    display: block;
+    margin-top: 9px;
+}
+
+.photoGallery img {
+    display: block;
+    width: 309px;
+}
+
+.photoGallery a:first-child {
+    margin-top: 0;
+}
+
+.photoGallery .example-pager2 {
+    top: auto;
+    left: 50%;
+    bottom: 96px;
+    z-index: 2;
+    width: auto;
+}
+
+.photoGallery .example-pager2 a {
+    background-position: 0 -238px;
+    width: 18px;
+    height: 18px;
+}
+
+.photoGallery .example-pager2 .cycle-pager-active {
+    background-position: -21px -238px;
+}
+
+.mediaPage .nextBtn {
+    margin-top: 70px;
+}
+
+.height205 {
+    max-height: 205px;
+}
+
+.height293 {
+    max-height: 293px;
+}
+
+.height120 {
+    max-height: 120px;
+}
+
+.height419 {
+    max-height: 419px;
+}
+
+.height208 {
+    max-height: 208px;
+}
+
+.height202 {
+    max-height: 202px;
+}
+
+/* Schedule page */
+
+.scheduleTopBg {
+    background: url("../img/scheduleTopBg.jpg") 0 0 repeat-x;
+}
+
+.scheduleForm {
+    font: normal 14px/16px 'playbold';
+    color: #d4d4d4;
+    text-transform: uppercase;
+    margin: 52px 0 0;
+}
+
+.scheduleForm label {
+    display: inline;
+}
+
+.scheduleForm select {
+    color: #818181;
+    font-family: 'open_sansregular';
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 174px;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 0 2px;
+    height: 23px;
+    line-height: 23px;
+    background: transparent;
+    -webkit-appearance: none;
+    border: none;
+}
+
+.scheduleForm select:focus, .scheduleForm select:active {
+    outline: 0;
+}
+
+.styledSelect {
+    background: url("../img/dropDownIcon.jpg") no-repeat right #fff;
+    margin-left: 6px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+.scheduleForm .control-group {
+    float: left;
+    margin-left: 14px;
+}
+
+.scheduleForm .control-group:first-child {
+    margin-left: 0;
+}
+
+.scheduleForm .orangeBtn.small {
+    float: left;
+    margin-left: 10px;
+}
+
+.orangeBtn.small {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 6px 30px 4px;
+}
+
+.tableWrapper {
+    margin-top: 60px;
+    width: 920px;
+}
+
+.tableWrapper table {
+    margin: 20px 0 40px;
+}
+
+.tableWrapper .mediumHeading {
+    font-family: 'playregular';
+    padding-bottom: 0;
+    background: none;
+}
+
+/* News page */
+
+.newsPage {
+    color: #fff;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.vinnyNewsList {
+    margin: 0;
+    list-style: none;
+    color: #a5a5a5;
+}
+
+.vinnyNewsList .lessNewsBlock img {
+    float: left;
+    margin: 0 26px 18px 0;
+    display: block;
+    width: 144px;
+    height: 144px;
+    border: 4px solid #e7e7e7;
+    -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+.newsPage .vinnyNewsList .heading {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    color: #fff;
+    clear: none;
+}
+
+.vinnyNewsList li {
+    background: url("../img/gray-dt-line.png") left bottom repeat-x;
+    margin-bottom: 30px;
+    padding-bottom: 22px;
+    line-height: 16px;
+}
+
+.vinnyNewsList ul {
+    list-style: disc;
+    margin: 10px 0 10px 25px;
+}
+
+.vinnyNewsList ul li {
+    background: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.vinnyNewsList .moreNewsBlock img {
+    /*width: 474px;
+    height: 262px;*/
+    border: 4px solid #e7e7e7;
+    -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+/*.moreNewsBlockImg {
+    width: 474px;
+    height: 262px;
+    float: left;
+    margin: 0 20px 10px 0;
+}*/
+
+.collapseBtn {
+    background-position: -41px -240px;
+    margin: 30px auto 0;
+    width: 17px;
+    height: 11px;
+}
+
+.lessNewsBlock:before, .lessNewsBlock:after, .moreNewsBlock:before, .moreNewsBlock:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.lessNewsBlock:after, .moreNewsBlock:after {
+    clear: both;
+}
+
+.vinnyNewsList .by {
+    color: #ef4925;
+    display: block;
+    font-family: 'open_sanslight_italic';
+}
+
+.vinnyNewsList p {
+    margin: 10px 0 0;
+}
+
+.topBtn {
+    background-position: 0 -260px;
+}
+
+.newsPage .bottomTexture {
+    background: url("../img/news-bottom-texture.png") 0 0 repeat-x;
+    height: 134px;
+}
+
+.newsPage .topTexture {
+    background: url("../img/news-top-texture.png") 0 0 repeat-x;
+    height: 104px;
+}
+
+.newsPage .heading {
+    margin: 40px 0;
+}
+
+/* Statistics - Splits tab */
+
+.tab, .scheduleContainer, #vinnyContactForm {
+    position: relative;
+}
+
+.loadingImage {
+    position: absolute;
+    top: 40%;
+    left: 46%;
+    display: block;
+}
+
+.innerTabs .scheduleForm, .gameLogs .scheduleForm {
+    margin: 0 0 14px;
+}
+
+.innerTabs .statsTable {
+    margin: 0 0 18px;
+}
+
+.scheduleForm h4 {
+    float: left;
+    font-size: 18px;
+    line-height: 20px;;
+    color: #fff;
+    margin-top: 4px;
+}
+
+.scheduleForm .fieldsWrapper {
+    float: right;
+}
+
+.innerTabs .scheduleForm .control-group {
+    margin-left: 6px;
+}
+
+.innerTabs .table th, .innerTabs .table td {
+    text-align: center;
+}
+
+.normalCase {
+    text-transform: none;
+}
+
+.toolTip {
+    display: inline-block;
+    cursor: help;
+}
+
+.qtip-dark {
+    background-color: #939393;
+    border: #939393;
+    color: #fff;
+    font: normal 11px/13px 'playregular';
+}
+
+.withBg {
+    background: #292929;
+    margin: 0;
+    padding: 4px 0 4px 16px;
+}
+
+#scheduleScrollbar, #statsScrollbar, #splitsScrollbar, #gameLogsScrollbar {
+    max-height: 660px;
+    overflow: hidden;
+}
+
+.customPagination {
+    /*width: 300px;*/
+    font: normal 18px/20px 'playbold';
+    float: right;
+    /*background: url("../img/pagination-bg.png") 0 1px no-repeat;*/
+    text-align: center;
+}
+
+.customPagination ul, .pagination ul>li:first-child>a, .pagination ul>li:first-child>span, .pagination ul>li:last-child>a, .pagination ul>li:last-child>span {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.customPagination ul>li {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.customPagination ul>li:first-child {
+    margin-left: 0;
+}
+
+.customPagination ul>li>a, .customPagination ul>li>span {
+    background: transparent;
+    color: #999;
+    padding: 8px 14px;
+    border: none;
+}
+
+.pagination ul>li>a:hover, .pagination ul>.active>a, .pagination ul>li>span, .pagination span.dots {
+    background: #000;
+    color: #d5d5d5;
+}
+
+#teamLogoMenu #teamDropForm {
+    margin: 0;
+}
+
+.listing .centerTd {
+    text-align: center;
+    width: auto;
+    display: block;
+}
+
+.statsTable .tdText {
+    text-align: center;
+}
+
+.mediaTab {
+    min-height: 300px;
+}
+
+.bodyTopPadding {
+    padding-top: 70px;
+}
+
+/* Search results page */
+
+.searchWrapper {
+    background: url("../img/top-line.png") top center no-repeat;
+    margin-bottom: 50px;
+    color: #a5a5a5;
+    padding-top: 30px;
+}
+
+.searchContainer {
+    width: 710px;
+    margin: 0 auto 50px;
+}
+
+.searchResultsForm .submitIcon {
+    position: static;
+    display: inline-block;
+    margin: 5px 0 0 8px;
+}
+
+.input-append input, .input-append select, .input-append .uneditable-input {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    font: normal 13px/18px 'open_sanslight';
+    padding: 3px 6px;
+    height: 18px;
+    color: #363636;
+}
+
+.searchWrapper ul {
+    margin: 0 0 0 8px;
+    list-style: none;
+}
+
+.searchWrapper li {
+    line-height: 16px;
+}
+
+.searchWrapper h6 {
+    font: normal 13px/18px 'open_sanssemibold';
+    color: #ef4925;
+}
+
+.searchWrapper ul a {
+    color: #ef4925;
+}
+
+.searchWrapper ul a:hover {
+    color: #cd3919;
+}
+
+.searchContent {
+    margin: 10px 0 10px 36px;
+}
+
+/* Face Toggle */
+
+.faceToggle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    border: none;
+    outline: none;
+}
+
+.relativeDiv {
+    position: relative;
+    width: 232px;
+    height: 400px;
+}
+
+.relativeDiv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.foundationRelativeDiv {
+    left: auto;
+    right: 0;
+}
+
+.foundationRelativeDiv .relativeDiv {
+    width: 230px;
+    height: 396px;
+}
+
+/* ------------------------ Philanthropist ------------------------ */
+
+/* Home */
+
+.philanthropistWrapper .sliderOuter .container {
+    position: static;
+}
+
+.philanthropistWrapper a, .philanthropistWrapper a:hover {
+    color: #000;
+}
+
+.philanthropistWrapper {
+    background: #fff;
+    color: #000;
+    font-family: 'open_sansregular';
+}
+
+.philanthropistWrapper header .navbar {
+    background: #fff;
+}
+
+.philanthropistWrapper header .navbar .logo {
+    background-image: url("../img/vinny40-black-logo.png");
+    width: 168px;
+    margin-top: -8px;
+}
+
+.philanthropistWrapper .fnInnerHeader .navbar .logo {
+    background: url("../img/black-logo-icon.png") 0 24px no-repeat;
+    width: 140px;
+    margin-top: -31px;
+}
+
+.philanthropistWrapper .navbar-inverse .brand, .philanthropistWrapper .navbar-inverse .nav>li>a {
+    color: #262626;
+    text-shadow: none;
+}
+
+.philanthropistWrapper .navbar-inverse .nav .active>a, .philanthropistWrapper .navbar-inverse .nav .active>a:hover, .philanthropistWrapper .navbar-inverse .nav .active>a:focus, .philanthropistWrapper .navbar-inverse .nav>li>a:focus, .philanthropistWrapper .navbar-inverse .nav>li>a:hover {
+    color: #000;
+}
+
+.philanthropistWrapper header .navbar .nav, .philanthropistWrapper header .navbar .nav>li {
+    background-image: url("../img/black-nav-separator.png");
+}
+
+.philanthropistWrapper header .navbar .nav>li>a {
+    padding: 30px 15px;
+}
+
+.philanthropistWrapper .fnInnerHeader .navbar .nav>li>a {
+    padding: 15px;
+}
+
+.philanthropistWrapper header .navbar .nav>.contactBtn {
+    background: none;
+    margin-left: 80px;
+}
+
+.navbar-inverse .nav .contactBtn:after {
+    border: none;
+}
+
+.philanthropistWrapper header .navbar .nav>.contactBtn>a {
+    padding: 0;
+}
+
+.innerHeader .navbar .nav>li>a {
+    padding: 15px;
+}
+
+.philanthropistWrapper header .navbar .nav {
+    margin-left: 16px;
+}
+
+.philanthropistWrapper header .navbar {
+    margin: 0;
+}
+
+.philanthropistWrapper .sliderOuter {
+    position: relative;
+    margin-top: 0;
+    border-bottom: none;
+}
+
+.sliderCaptions {
+    color: #fff;
+    width: 400px;
+    position: absolute;
+    top: 320px;
+}
+
+.sliderCaptions h2 {
+    margin: 0 0 6px;
+    font: normal 40px/42px 'open_sansregular';
+    color: #000;
+    text-transform: uppercase;
+}
+
+.sliderCaptions p {
+    background: #000;
+    padding: 4px 8px;
+}
+
+.msgIcon {
+    background: url("../img/sprite.png") -62px -238px no-repeat;
+    display: inline-block;
+    float: right;
+    width: 18px;
+    height: 14px;
+    margin: 33px 0 0;
+}
+
+.fnInnerHeader .msgIcon {
+    margin-top: 19px;
+}
+
+.philanthropistWrapper .slider img {
+    height: 800px;
+}
+
+.prevSlider {
+    background: url("../img/sprite.png") -49px -260px no-repeat;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 48%;
+    left: 2%;
+    z-index: 999;
+}
+
+.nextSlider {
+    background-position: -95px -260px;
+    left: auto;
+    right: 2%;
+}
+
+.whiteTexture {
+    background: url("../img/whiteTexture.jpg") 0 0 repeat;
+    padding: 28px 0 0;
+}
+
+.pageCaption {
+    background: url("../img/page-caption-border.png") bottom center no-repeat;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 0 10px;
+    font: normal 22px/26px 'Montserrat-Regular';
+}
+
+/* About vinny40 */
+
+.philanthropistWrapper section {
+    position: relative;
+    background: url("../img/white-texture-top.png") 0 0 repeat-x;
+    min-height: 400px;
+    z-index: 2;
+}
+
+.whiteTextureBottom {
+    background: url("../img/white-texture-bottom.png") 0 0 repeat-x;
+    height: 426px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.bigHeading {
+    font: normal 52px/54px 'Montserrat-Regular';
+    color: #d54d2f;
+    margin: 38px 0 8px;
+    text-transform: uppercase;
+}
+
+.aboutVinnyContent {
+    background: url("../img/content-divider.png") left bottom no-repeat;
+}
+
+.aboutVinnyContent div {
+    float: left;
+    width: 390px;
+}
+
+.rightImg {
+    float: right;
+    margin: 16px 0 2px 0;
+}
+
+.leftImg {
+    float: left;
+    margin: 16px 0 2px 0;
+}
+
+.aboutSecondPara div {
+    margin: 34px 0 0 10px;
+    float: left;
+    width: 562px;
+}
+
+#aboutVinny a {
+    font-weight: bold;
+}
+
+#aboutVinny a.contentToggleBtn {
+    font-weight: normal;
+}
+
+.twoColumnContent {
+    margin-top: 16px;
+}
+
+.pageBottomDivider {
+    background: url("../img/page-bottom-divider.png") 0 0 no-repeat;
+    height: 82px;
+    margin: 38px 0;
+}
+
+.pageBottomDivider .nextBtn {
+    margin: 10px auto 0;
+}
+
+.topGrayBg {
+    background: url("../img/top-gray-bg.png") 0 0 no-repeat;
+    min-height: 50px;
+    margin: 50px 0 0;
+    padding-top: 22px;
+}
+
+.topGrayBg .bigHeading {
+    margin: 0 0 0 40px;
+}
+
+.patientsTab {
+    width: 880px;
+    margin: -40px 0 30px 40px;
+    font-size: 13px;
+    line-height: 18px;
+    /*max-height: 500px;
+    overflow: hidden;*/
+}
+
+.patientTabs {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.patientsTab .bigHeading {
+    margin: 0 0 20px;
+}
+
+.patientsTab img {
+    display: block;
+    width: 408px;
+    height: 266px;
+}
+
+.patientsTab h4 {
+    font: normal 24px/26px 'Montserrat-Bold';
+    clear: none;
+    color: #d54d2f;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.patientsTab span {
+    font-size: 12px;
+}
+
+.patientsTab span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Regular';
+}
+
+.titleBlock {
+    background: url("../img/title-divider.png") 420px bottom no-repeat;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 18px;
+}
+
+.imgShadow {
+    position: relative;
+    background: #f4f4f4;
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+}
+
+.imgShadow:before, .imgShadow:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 200px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.imgShadow:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+.thumbnailUl {
+    background: url("../img/thumbnail-shadow.png") top center no-repeat;
+    padding: 30px 0 0;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+#cycle-4, .defaultCycle-4 {
+    margin: 0 auto;
+}
+
+.thumbnailUl .patientSlide {
+    margin-right: 6px;
+    width: 110px;
+    height: 90px;
+}
+
+.thumbnailUl .defaultCycle-4 .patientSlide {
+    width: 168px;
+    height: 110px;
+}
+
+.defaultCycle-4 .patientSlide {
+    margin-right: 2px;
+}
+
+.thumbnailUl a, .thumbnailUl img {
+    display: inline-block;
+}
+
+.thumbnailUl img {
+    width: 110px;
+    height: 90px;
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.thumbnailUl .defaultCycle-4 img {
+    width: 168px;
+    height: 110px;
+}
+
+.bottomGrayBg {
+    background: url("../img/bottom-gray-bg.png") 0 0 no-repeat;
+    min-height: 80px;
+    margin-top: -32px;
+}
+
+/* Photo gallery */
+
+.photoGalleryPage .photoGallery {
+    background: transparent;
+}
+
+.photoGalleryPage .example-pager2 {
+    bottom: 100px;
+}
+
+.photoGalleryPage .photoGallery img {
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.photoGalleryPage .example-pager a {
+    background-position: -89px -238px;
+}
+
+.photoGalleryPage .example-pager2 .cycle-pager-active {
+    background-position: -110px -238px;
+}
+
+.photoGalleryPage .nextBtn {
+    margin-top: 60px;
+}
+
+/* Contact us */
+
+.contactUsPage {
+    text-align: center;
+    padding-top: 24px;
+}
+
+.subHeading {
+    font: normal 18px/22px 'Montserrat-Regular';
+    margin-top: 40px;
+}
+
+.contactContainer {
+    margin-top: 62px;
+    font: normal 16px/20px 'Montserrat-Regular';
+    color: #272727;
+    text-align: left;
+}
+
+.contactContainer p {
+    margin-bottom: 16px;
+}
+
+.mailIcon, .phoneIcon {
+    display: inline-block;
+    min-height: 16px;
+    color: #272727;
+    background: url("../img/sprite.png") 0 -306px no-repeat;
+    margin-top: 10px;
+    padding-left: 32px;
+}
+
+.mailIcon:hover {
+    color: #000;
+}
+
+.phoneIcon {
+    background-position: 0 -335px;
+    min-height: 22px;
+}
+
+textarea {
+    resize: none;
+}
+
+.contactForm textarea, .contactForm input[type="text"], .contactForm input[type="password"], .contactForm input[type="email"], .contactForm input[type="number"] {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #dedede;
+    background: #f4f4f4;
+    font: normal 16px/20px 'Montserrat-Regular';
+    padding: 6px;
+    color: #272727;
+    margin-bottom: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+
+.contactForm textarea:focus, .contactForm input[type="text"]:focus, .contactForm input[type="password"]:focus, .contactForm input[type="email"]:focus, .contactForm input[type="number"]:focus {
+    border-color: rgba(82, 168, 236, 0.8);
+    outline: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+
+.contactForm .invalid:focus, .contactForm .invalid[type="text"]:focus, .contactForm .invalid[type="password"]:focus, .contactForm .invalid[type="email"]:focus, .contactForm .invalid[type="number"]:focus {
+    border-color: rgba(229, 63, 26, 0.8);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+
+.contactForm .invalid[type="text"], .contactForm .invalid[type="password"], .contactForm .invalid[type="email"], .contactForm .invalid[type="number"], .contactForm textarea.invalid {
+    border: 1px solid #d54d2f;
+}
+
+.contactForm .orangeBtn {
+    color: #fff;
+    font: normal 18px/20px 'Montserrat-Bold';
+    padding: 11px 28px 9px;
+    margin-top: 14px;
+}
+
+.contactForm .orangeBtn:hover {
+    color: #fff;
+}
+
+.contactForm .controls-row [class*="span"]+[class*="span"] {
+    margin-left: 10px;
+}
+
+.contactForm input.span4, .contactForm textarea.span4, .contactForm .uneditable-input.span4 {
+    width: 293px;
+}
+
+.contactForm .controls div {
+    width: 307px;
+    float: left;
+    margin: 0 0 7px 6px;
+}
+
+.contactForm .controls div:first-child {
+    margin-left: 0;
+}
+
+.contactForm span {
+    font: normal 11px/14px 'open_sansregular';
+    color: #e53f1a;
+    display: none;
+}
+
+#feedback {
+    text-align: center;
+    color: #6CD36C;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.hasPlaceholder {
+    color: #999;
+}
+
+/* Supporters page */
+
+.supportersPage .bigHeading, .logosContainer {
+    text-align: center;
+}
+
+.supportersPage .subHeading {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 24px 0 16px;
+}
+
+.logosContainer {
+    font: normal 14px/26px 'Montserrat-Regular';
+    color: #4e4e4e;
+    text-transform: uppercase;
+}
+
+.logosContainer a {
+    color: #4e4e4e;
+}
+
+.logosContainer a:hover {
+    color: #333;
+}
+
+.logosContainer i {
+    display: inline-block;
+    color: #d54d2f;
+    margin: 0 6px;
+    font-style: normal;
+}
+
+.logosContainer h3 {
+    font: normal 24px/26px 'Montserrat-Bold';
+    margin: 0 0 26px;
+    text-align: center;
+    color: #353332;
+}
+
+.logosHolder {
+    margin-bottom: 16px;
+}
+
+.logosHolder a, .logosHolder span {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.sponsorsLogos .logosHolder a, .sponsorsLogos .logosHolder span {
+    margin-left: 7px;
+}
+
+.logosHolder a:first-child, .logosHolder span:first-child, .vinnyLogo .logosHolder a:first-child {
+    margin-left: 0;
+}
+
+.vinnyLogo .logosHolder {
+    margin: 20px 0 0;
+}
+
+.vinnyLogo .logosHolder a, .vinnyLogo .logosHolder span {
+    margin: 10px;
+}
+
+.philanthropistWrapper #supporters, .philanthropistWrapper #contactUs {
+    background-image: url("../img/pagetop-gray-bg.jpg");
+}
+
+.philanthropistWrapper #photoGallery {
+    background: none;
+}
+
+.philanthropistWrapper #supporters .whiteTextureBottom {
+    background-image: url("../img/pagebottom-gray-bg.jpg");
+    height: 573px;
+}
+
+.logosContainer {
+    background: url("../img/logos-bg.png") top center no-repeat;
+    width: 800px;
+    margin: 0 auto;
+    padding: 22px 0 12px;
+}
+
+.fontSizeBig {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.fontSizeBig i {
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+    top: -3px;
+}
+
+/* Video page*/
+
+.photoGalleryPage .subNavWrapper {
+    background: url("../img/foundaton-nav-wrapper.jpg") left bottom repeat-x;
+    border-bottom: none;
+    margin-bottom: 35px;
+    padding-top: 33px;
+}
+
+.photoGalleryPage .subNavWrapper ul {
+    position: relative;
+    top: 3px;
+}
+
+.photoGalleryPage .subNavWrapper .nav-pills>li>a {
+    background: url("../img/gray-btn-bg.jpg") 0 0 repeat-x #898989;
+    color: #fff;
+    text-shadow: 2px 0 0 rgba(0, 0, 0, 0.20);
+}
+
+.photoGalleryPage .subNavWrapper .nav-pills>.active>a, .photoGalleryPage .subNavWrapper .nav-pills>.active>a:hover, .photoGalleryPage .subNavWrapper .nav>li>a:hover {
+    background: url("../img/orange-btn-bg.jpg") 0 0 repeat-x #d54d2f;
+    color: #fff;
+    text-shadow: 2px 0 0 rgba(186, 34, 0, 0.40);
+}
+
+.videoGallery .videoCaption {
+    margin-top: 14px;
+    text-align: center;
+}
+
+.videoGallery #cycle-2, .videoGallery #cycle-3 {
+    margin: 20px auto 0;
+}
+
+.videoTabBox iframe {
+    margin: 0;
+    padding: 0;
+    width: 940px;
+    height: 520px;
+}
+
+.videoGallery .thumbWrap {
+    display: block;
+    margin-left: 5px;
+    position: relative !important;
+    width: 118px;
+    height: 72px;
+}
+
+.videoGallery .thumbWrap img {
+    width: 118px;
+    height: 72px;
+}
+
+.videoGallery .thumbWrap:after {
+    background: url("../img/thumb-bg.png") 0 0 no-repeat;
+    width: 118px;
+    height: 72px;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.videoGallery .thumbWrap:first-child {
+    margin-left: 0;
+}
+
+.slideshowWrapper {
+    position: relative;
+}
+
+.thumbPagination, .patientPagination {
+    background: url("../img/sprite.png") 0 -364px no-repeat;
+    width: 23px;
+    height: 66px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    text-indent: -9999px;
+}
+
+.thumbPagination.prev {
+    background-position: -30px -364px;
+    left: auto;
+    right: 10px;
+}
+
+.playerVideoGallery .thumbPagination {
+    background-position: -59px -364px;
+}
+
+.playerVideoGallery .thumbPagination.prev {
+    background-position: -89px -364px;
+}
+
+.patientPagination {
+    width: 18px;
+    height: 45px;
+    background-position: -118px -376px;
+    top: 54px;
+    left: 92px;
+}
+
+.patientPagination.prev {
+    background-position: -139px -376px;
+    left: auto;
+    right: 94px;
+}
+
+.homeImageWrapper img {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity = 0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+.homeImageWrapper .loadedImages {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity = 100);
+    -moz-opacity: 10;
+    -khtml-opacity: 10;
+    opacity: 10;
+}
+
+.notFoundErrorWrap{
+    text-align: center;
+    padding: 90px 0 0;
+    height: 450px;
+}
+.notFoundErrorWrap h1{
+    color: #ccc;
+    text-shadow: 1px 1px 1px #666;
+    padding-top: 15px;
+}
+.notFoundErrorWrap a{
+    text-decoration: none;
+    color: #d54d2f;
+    font-size: 14px;
+    display: block;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.lastGames {
+    background: url("../img/hlinebig.png") center top no-repeat;
+    padding-top: 10px;
+    margin-top: 16px;
+}
+
+.lastGames .normalText {
+    background: none;
+    padding-bottom: 6px;
+}
+
+.lastGames .table {
+    background: none;
+    margin: 0;
+    border: none;
+}
+
+.lastGames th, .lastGames td {
+    padding: 3px;
+    text-align: center;
+}
+
+.lastGames th {
+    padding: 4px 3px;
+}
+
+.lastGames th {
+    border-left: none;
+}
+
+.lastGames thead {
+    background: #2b2b2b;
+    color: #b6b6b6;
+}
+
+.lastGames th {
+    font-weight: normal;
+}
+
+.lastGames tbody {
+    background: #fff;
+    color: #000;
+    font: normal 12px/14px 'playregular';
+}
+
+.searchForm .searchBtnSmall {
+    display: none;
+}
+
+.smallerView {
+    position: static;
+    display: none;
+}
+
+#playerInnerMenu {
+    display: none;
+}
+
+.bottomBar i {
+    background: url("../img/sprite.png") 0 0 no-repeat;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
+    position: relative;
+    top: 3px;
+}
+
+.bottomBar .footerAddressIcon {
+    background-position: 0 -537px;
+}
+
+.bottomBar .footerPhoneIcon {
+    background-position: 0 -562px;
+    top: 5px;
+}
+
+.bottomBar .footerEmailIcon {
+    background-position: 0 -585px;
+    top: 6px;
+}
+
+.vinnyNewsList .table th, .vinnyNewsList .table td {
+    border: none;
+    padding: 0;
+}
+
+.fetch-tweets {
+    overflow: hidden !important;
+}
+
+.leftSide span, .rightSide span {
+    display: none;
+}
+
+.showDesktop {
+    display: block !important;
+}
+
+.showIpad {
+    display: none !important;
+}
+
+.showIphone {
+    display: none !important;
+}
+
+.pageContentWrapper {
+    display: block;
+}
+
+.contentToggleBtn {
+    display: none;
+}
+
+.topBtnWrapper {
+    height: 70px;
+}
+
+/* Responsive design */
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+    header .navbar .container {
+        width: 724px;
+    }
+
+    .listing th, .listing td {
+        width: 15%;
+    }
+
+    .boxesWrapper .span4 {
+        width: 194px;
+        min-height: 540px;
+    }
+
+    header .navbar .nav>li>a {
+        padding: 30px 10px;
+    }
+
+    .searchForm {
+        margin-left: 10px;
+    }
+
+    .searchForm input {
+        width: 110px !important;
+    }
+
+    .searchForm .searchBtn, .searchForm .searchIcon {
+        left: 128px;
+    }
+
+    /* Meet vinny */
+
+    .withIcons div {
+        width: 338px;
+    }
+
+    .vinnyPic {
+        width: 270px;
+    }
+
+    .shortContent {
+        width: auto;
+    }
+
+    /* Media page */
+
+    .photoGallery div, .photoGallery div img {
+        width: 236px;
+    }
+
+    .photoGallery .middleColumn, .photoGallery .middleColumn img {
+        width: 210px;
+    }
+
+    .height205 {
+        min-height: 157px;
+    }
+
+    .height293 {
+        min-height: 218px;
+    }
+
+    .height120 {
+        min-height: 91px;
+    }
+
+    .height419 {
+        min-height: 319px;
+    }
+
+    .height208 {
+        min-height: 156px;
+    }
+
+    .height202 {
+        min-height: 154px;
+    }
+
+    /* Schedule page */
+
+    .tableWrapper {
+        width: 724px;
+    }
+
+    .scheduleForm select {
+        width: 114px;
+    }
+
+    .orangeBtn.small {
+        padding: 6px 20px 4px;
+    }
+
+    /* News page */
+
+    .vinnyNewsList .moreNewsBlock img {
+        width: 374px;
+        height: 207px;
+    }
+
+    /* Search results page */
+
+    .searchContainer {
+        width: 610px;
+        margin: 0 auto 50px;
+    }
+
+    /* ------------------------ Philanthropist ------------------------ */
+
+    /* About vinny40 */
+
+    .philanthropistWrapper header .navbar .nav>.contactBtn {
+        margin-left: 16px;
+    }
+
+    .philanthropistWrapper header .navbar .nav>li>a {
+        padding: 30px 7px;
+    }
+
+    .philanthropistWrapper .fnInnerHeader .navbar .nav>li>a {
+        padding: 15px 9px;
+    }
+
+    .philanthropistWrapper header .navbar .nav>.contactBtn>a {
+        padding: 0;
+    }
+
+    .philanthropistWrapper header .navbar .nav {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    #aboutVinny .leftImg {
+        margin: 16px 16px 16px 0;
+    }
+
+    #aboutVinny .rightImg {
+        float: none;
+        display: block;
+        margin: 16px auto 0;
+    }
+
+    .aboutVinnyContent {
+        margin-bottom: 20px;
+    }
+
+    .aboutVinnyContent div, .aboutSecondPara div {
+        width: auto;
+        float: none;
+        margin: 0;
+    }
+
+    .philanthropistWrapper .slider img {
+        height: 620px;
+    }
+
+    .sliderCaptions {
+        width: 300px;
+        top: 270px;
+    }
+
+    /* Meet the patients */
+
+    .pageBottomDivider {
+        background: url("../img/page-bottom-divider-iPad.png") 0 0 no-repeat;
+    }
+
+    .topGrayBg {
+        background: url("../img/top-gray-bg-iPad.png") 0 0 no-repeat;
+    }
+
+    .bottomGrayBg {
+        background: url("../img/bottom-gray-bg-iPad.png") 0 0 no-repeat;
+    }
+
+    .patientsTab img {
+        display: block;
+        width: 300px;
+        height: 196px;
+    }
+
+    .patientsTab {
+        width: 670px;
+    }
+
+    /* Contact us */
+
+    .contactForm input.span4, .contactForm textarea.span4, .contactForm .uneditable-input.span4 {
+        width: 221px;
+    }
+
+    .contactForm .controls div {
+        width: 235px;
+    }
+
+    .mailIcon, .phoneIcon {
+        font-size: 14px;
+        padding-left: 28px;
+    }
+
+    .innerHeader .navbar .nav>li>a {
+        padding: 16px 12px;
+    }
+
+    /* Video page */
+
+    .videoTabBox iframe {
+        width: 724px;
+        height: 350px;
+    }
+
+    .videoGallery #cycle-2 {
+        width: 620px !important;
+    }
+
+    #cycle-4{
+        width: 462px !important;
+    }
+
+    .logosContainer {
+        width: 724px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    body {
+        padding: 0;
+        background: #111 !important;
+    }
+
+    .faceToggle {
+        display: none !important;
+        opacity: 0 !important;
+    }
+
+    .example-pager {
+        left: auto;
+        right: 30px;
+    }
+
+    .photoGallery .example-pager {
+        right: auto;
+        left: 50%;
+    }
+
+    .example-pager a {
+        width: 14px;
+        height: 14px;
+        background-position: -32px 0;
+        margin-left: 6px;
+    }
+
+    .example-pager .cycle-pager-active {
+        background-position: -49px 0;
+    }
+
+    .topBar {
+        height: auto;
+    }
+
+    #teamLogoMenu .tmContainer {
+        width: auto !important;
+    }
+
+    #teamLogoMenu {
+        height: auto !important;
+        float: none !important;
+    }
+
+    #teamLogoMenu .tmShield {
+        float: none !important;
+        padding-right: 0 !important;
+        padding-bottom: 10px;
+    }
+
+    header .navbar .logo, .navbar .nav, .navbar .nav>li, .searchForm {
+        float: none;
+    }
+
+    header .navbar .container {
+        width: auto;
+        padding: 4px 8px;
+        margin-top: 0;
+        position: relative;
+    }
+
+    header .navbar .nav {
+        margin: 0;
+        background: #181818;
+    }
+
+    .searchForm {
+        margin: 0;
+        min-height: 85px;
+        background: #181818;
+    }
+
+    header .navbar .nav {
+        border-top: 1px solid #3f3f3f;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    header .navbar .nav>li>a {
+        padding: 15px;
+        border-bottom: 1px solid #3f3f3f;
+    }
+
+    header .navbar .nav, header .navbar .nav>li {
+        background: none;
+    }
+
+    .innerHeader .searchForm {
+        margin-top: 0;
+    }
+
+    .navSearchWrapper {
+        display: none;
+    }
+
+    .toggleBtn {
+        float: left;
+        width: 23px;
+        height: 17px;
+        display: inline-block;
+        background: url(../img/sprite.png) -151px 0 no-repeat transparent;
+        margin: 24px 0 0 -34px;
+    }
+
+    .innerMenuWrapper {
+        float: left;
+        background: #090909;
+        width: 100%;
+        height: 100%;
+        min-height: 200px;
+    }
+
+    #teamLogoMenu .newListSelected {
+        width: 140px !important;
+        background: url(../img/networkNavBgSmall.jpg) 0 0 no-repeat !important;
+    }
+
+    #teamLogoMenu .selectedTxt {
+        width: 140px !important;
+    }
+
+    .sliderOuter, .philanthropistWrapper .sliderOuter {
+        margin-top: 66px;
+    }
+
+    #teamLogoMenu {
+        padding-left: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .boxesWrapper .row {
+        margin-left: 0;
+    }
+
+    .boxesWrapper .span4 {
+        float: none;
+        display: block;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        min-height: 0;
+        padding: 10px;
+        margin: 0 0 10px;
+    }
+
+    .mediumHeading, .btmLine {
+        background: none;
+        border-bottom: 1px solid #222;
+    }
+
+    .searchForm input:focus, .searchForm input:active {
+        border-color: #555;
+    }
+
+    .smallerView {
+        display: block;
+    }
+
+    .statsBoxOuter, .statsBox {
+        width: auto;
+        padding: 10px 10px 0;
+        border: none;
+    }
+
+    .statsBox {
+        padding: 0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        background: transparent;
+    }
+
+    .lastGames {
+        background: none;
+        border-top: 1px solid #333;
+    }
+
+    .topTexture, .bottomTexture, .rightTexture, .leftTexture, .statsShadow, .navbar-inverse .nav .active:after, .vinnyPic {
+        display: none;
+    }
+
+    .withIcons div {
+        width: auto;
+        margin: 0 20px;
+    }
+
+    .innerMenu {
+        float: right;
+        /*position: fixed;*/
+        top: 24px;
+        right: 0;
+        height: 0;
+        display: block;
+        /*margin-right: -300px;*/
+    }
+
+    .navbarWrapper, .innerHeader .navbarWrapper, .philanthropistWrapper .navbarWrapper {
+        padding-top: 0;
+        background: none;
+    }
+
+    .topBarWrapper {
+        padding-bottom: 10px;
+        background: #000;
+        display: none !important;
+        height: 0 !important;
+    }
+
+    .whiteLinks {
+        padding: 15px 0 15px 15px;
+        font-size: 16px;
+    }
+
+    .whiteLinks a {
+        color: #fff;;
+    }
+
+    .whiteLinks a:hover {
+        color: #999;
+        text-decoration: none;
+    }
+
+    .searchForm .searchBtn, .searchForm .searchIcon, .submitIcon, .searchForm .searchBtnSmall {
+        left: 86%;
+        background: url(../img/sprite.png) -188px 0 no-repeat;
+        width: 25px;
+        height: 25px;
+        top: 30px;
+    }
+
+    .innerHeader .navbar, .philanthropistWrapper .fnInnerHeader .navbar {
+        border-bottom: none;
+    }
+
+    header .navbar {
+        background: url(../img/logo-glow.png) bottom center no-repeat #000;
+    }
+
+    .searchForm input {
+        left: 50px;
+        top: 30px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .statsBox h2 {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .vinnyStats .vinnyInfo {
+        width: 50%;
+    }
+
+    .vinnyStats img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .vinnyStats .vinnyInfo span {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .plainText {
+        font-size: 18px;
+    }
+
+    .vinnyStats .vinnyInfo h3 {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .meetVinnyImg {
+        position: relative;
+    }
+
+    .meetVinnyImg p {
+        width: 70%;
+    }
+
+    .meetVinnyImg:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 206px;
+        height: 198px;
+        background: url(../img/meet-vinny.png) 0 0 no-repeat;
+    }
+
+    .meetVinny .bottomBorder {
+        border: none;
+    }
+
+    .heading {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .patchHeading {
+        background: none;
+        border-bottom: 1px solid #000;
+        min-height: 0;
+        padding: 0;
+        margin: 0 20px 0 0;
+    }
+
+    .meetVinny, .newsPage, .statsBoxOuter {
+        background: url("../img/black-texture.jpg") 0 0 repeat;
+    }
+
+    .vinnyStats .table tr {
+        border-top: 1px solid #000;
+        background: none;
+    }
+
+    .sliderOuter {
+        border-bottom: 5px solid #000;
+    }
+
+    .statsBoxOuter {
+        padding-top: 20px;
+    }
+
+    .listing thead th:first-child, .listing th:first-child, .listing td:first-child {
+        padding-left: 8px;
+    }
+
+    #homeScheduleScrollbar {
+        overflow: hidden;
+    }
+
+    #homeScheduleScrollbar .listing {
+        width: 650px;
+    }
+
+    .statsTable{
+        width: 910px;
+    }
+
+    .subNavWrapper {
+        margin-top: -8px;
+        border-bottom: none;
+    }
+
+    .ipadLeftVinny {
+        position: fixed;
+        bottom: 50px;
+        left: -383px;
+        z-index: 9999;
+        -webkit-overflow-scrolling: touch;
+        transform: none;
+        -ms-transform:none;
+        -webkit-transform:none;
+    }
+
+    .ipadLeftVinny .vinnyOrgLink, .ipadLeftVinny .vinnyOrgLinkToggle {
+        float: left;
+    }
+
+    .ipadLeftVinny .vinnyOrgLink {
+        width: 383px;
+        height: 164px;
+        display: inline-block;
+        background: url(../img/vinny-ipad-left.png) 0 0 no-repeat;
+    }
+
+    .ipadLeftVinny .vinnyOrgLinkToggle {
+        width: 25px;
+        height: 164px;
+        display: inline-block;
+        background: url(../img/vinny-ipad-left-btns.png) 0 0 no-repeat;
+    }
+
+    .ipadLeftVinny .vinnyOrgLinkToggle.active {
+        background-position: -25px 0;
+    }
+
+    #playerInnerMenu {
+        display: block;
+    }
+
+    /* Media page */
+
+    .photoGallery li {
+        width: 100%;
+    }
+
+    .photoGallery div {
+        width: 33.3333%;
+    }
+
+    .photoGallery .middleColumn {
+        width: 30.56768558951965%;
+    }
+
+    .photoGallery div img, .photoGallery .middleColumn img {
+        width: 100%;
+    }
+
+    .photoGallery a {
+        margin-top: 4%;
+    }
+
+    .photoGallery .middleColumn {
+        margin: 0 1%;
+    }
+
+    .height205 {
+        max-height: 121px;
+    }
+
+    .height293 {
+        max-height: 170px;
+    }
+
+    .height120 {
+        max-height: 81px;
+    }
+
+    .height419 {
+        max-height: 255px;
+    }
+
+    .height208 {
+        max-height: 124px;
+    }
+
+    .height202 {
+        max-height: 126px;
+    }
+
+    .videoTabBox iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .topSideTexture, .bottomSideTexture {
+        display: none;
+    }
+
+    .mediaPage {
+        background: url("../img/black-texture.jpg") 0 0 repeat;
+    }
+
+    .bottomBar span {
+        margin: 0 10px;
+    }
+
+    .tableWrapper {
+        width: auto;
+    }
+
+    #statisticsTable table {
+        width: 770px;
+    }
+
+    .vinnyNewsList .lessNewsBlock img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .newsPage .vinnyNewsList .heading {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .scheduleTopBg {
+        background: none;
+    }
+
+    .scheduleForm select {
+        width: 100%;
+        margin: 0;
+    }
+
+    .scheduleForm .control-group {
+        margin-left: 2%;
+        width: 32%;
+    }
+
+    .scheduleForm .orangeBtn.small {
+        margin-left: 0;
+    }
+
+    .photoGallery .example-pager2 a {
+        background-position: -67px 0;
+    }
+
+    .photoGallery .example-pager2 .cycle-pager-active {
+        background-position: -87px 0;
+    }
+
+    .vinnyNewsList .moreNewsBlock img {
+        margin: 10px 0;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .searchContainer {
+        width: auto;
+    }
+
+    .searchResultsForm input[class*="span"] {
+        width: 86%;
+    }
+
+    .searchWrapper ul {
+        margin-left: 0;
+    }
+
+    header {
+        /*position: relative;*/
+    }
+
+    .innerHeader .navbar .logo, .fnInnerHeader .navbar .logo, header .navbar .logo {
+        width: 130px;
+        height: 58px;
+        margin: 0;
+    }
+
+    .innerHeader .navbar .logo, header .navbar .logo {
+        background: url("../img/vinny40LogoDevices.png") 0 0 no-repeat;
+    }
+
+    .innerHeader .navbar .logo a, .fnInnerHeader .navbar .logo a, header .navbar .logo a {
+        width: 130px;
+        height: 58px;
+    }
+
+    .slider, .slider img {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .slider img {
+        position: static !important;
+    }
+
+    .videoGallery #cycle-2, #cycle-4 {
+        width: 82% !important;
+    }
+
+    .heading {
+        margin: 10px 0;
+    }
+
+    .mediaPage .nextBtn {
+        margin-top: 60px;
+    }
+
+    #tab2 .scheduleForm h4, #tab3 .scheduleForm h4, #tab2 .scheduleForm .fieldsWrapper, #tab3 .scheduleForm .fieldsWrapper {
+        float: none;
+    }
+
+    #tab2 .scheduleForm .control-group, #tab3 .scheduleForm .control-group {
+        width: 48%;
+    }
+
+    /* ---------------------- Philanthropist ---------------------- */
+
+    .philanthropistWrapper .toggleBtn {
+        background-position: -149px -20px;
+        background-color: #fff;
+        padding: 2px;
+    }
+
+    .philanthropistWrapper .innerMenuInner {
+        background: #fbfbfb;
+    }
+
+    .innerMenuInner {
+        background: #090909;
+    }
+
+    .philanthropistWrapper header .navbar .nav {
+        margin-left: 0;
+    }
+
+    #philanthropistWrapper header .navbar .nav>li>a {
+        border-bottom: 1px solid #bebebe;
+    }
+
+    .philanthropistWrapper header .navbar .nav, .philanthropistWrapper header .navbar .nav>li {
+        background: none;
+    }
+
+    .philanthropistWrapper .navbar-inverse .brand, .philanthropistWrapper .navbar-inverse .nav>li>a {
+        color: #999;
+    }
+
+    .philanthropistWrapper header .navbar .nav {
+        border-top: none;
+    }
+
+    .philanthropistWrapper .whiteLinks, .philanthropistWrapper .whiteLinks a {
+        color: #5e5d5d;
+    }
+
+    .philanthropistWrapper .whiteLinks a:hover {
+        color: #999;
+    }
+
+    .philanthropistWrapper header .navbar .nav>li>a {
+        padding: 15px;
+    }
+
+    #aboutVinny .leftImg {
+        margin: 4px 4px 4px 0;
+        width: 50%;
+    }
+
+    #aboutVinny .rightImg {
+        float: none;
+        display: block;
+        margin: 16px auto 0;
+    }
+
+    .aboutVinnyContent {
+        background: none;
+    }
+
+    .aboutSecondPara {
+        margin-top: 10px;
+    }
+
+    .aboutVinnyContent div, .aboutSecondPara div {
+        width: auto;
+        float: none;
+        margin: 0;
+    }
+
+    .sliderCaptions {
+        top: auto;
+        bottom: 0;
+        left: 30px;
+        width: 90%;
+    }
+
+    .prevSlider {
+        width: 20px;
+        height: 20px;
+        background-position: -142px -260px;
+    }
+
+    .nextSlider {
+        background-position: -168px -260px;
+    }
+
+    .philanthropistWrapper header .navbar .logo, .philanthropistWrapper .fnInnerHeader .navbar .logo {
+        background: url("../img/vinny40-black-logo-divices.png") 0 0 no-repeat;
+        width: 130px;
+        height: 58px;
+        margin-top: 0;
+    }
+
+    .philanthropistWrapper header .navbar .logo a {
+        width: 130px;
+        height: 58px;
+    }
+
+    .philanthropistWrapper .fnInnerHeader .navbarWrapper {
+        padding-top: 0;
+    }
+
+    .bigHeading {
+        font-size: 36px;
+        line-height: 38px;
+        margin-top: 20px;
+    }
+
+    .sliderCaptions p {
+        padding: 3px;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+
+    .sliderCaptions h2 {
+        padding: 3px 3px 0;
+        margin: 0;
+        color: #fff;
+        font-size: 28px;
+        line-height: 30px;
+        background: #000;
+        display: inline-block;
+    }
+
+    .topGrayBg, .pageBottomDivider {
+        background: none;
+        min-height: 0;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .patientsTab, .logosContainer {
+        width: auto;
+    }
+
+    .mailIcon, .phoneIcon {
+        display: block;
+    }
+
+    .tab, .scheduleContainer, #vinnyContactForm {
+        margin-top: 0;
+    }
+
+    .contactForm input.span4, .contactForm textarea.span4, .contactForm .uneditable-input.span4, .contactForm .controls div {
+        width: 100%;
+    }
+
+    .contactForm .controls div {
+        margin-left: 0;
+    }
+
+    .subHeading {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .contactContainer {
+        margin-top: 0;
+    }
+
+    .subHeading {
+        margin-top: 20px;
+    }
+
+    .patientsTab {
+        margin-left: 0;
+    }
+
+    .titleBlock {
+        background: none;
+        border-bottom: 1px solid #ddd;
+        overflow: hidden;
+    }
+
+    .ipadRightVinny {
+        position: fixed;
+        bottom: 50px;
+        right: -383px;
+        z-index: 9999;
+        -webkit-overflow-scrolling: touch;
+        transform: none;
+        -ms-transform:none;
+        -webkit-transform:none;
+    }
+
+    .ipadRightVinny .vinnyOrgLink, .ipadRightVinny .vinnyOrgLinkToggle {
+        float: left;
+    }
+
+    .ipadRightVinny .vinnyOrgLink {
+        width: 383px;
+        height: 164px;
+        display: inline-block;
+        background: url(../img/vinny-ipad-right.png) 0 0 no-repeat;
+    }
+
+    .ipadRightVinny .vinnyOrgLinkToggle {
+        width: 25px;
+        height: 164px;
+        display: inline-block;
+        background: url(../img/vinny-ipad-left-btns.png) -25px 0 no-repeat;
+    }
+
+    .ipadRightVinny .vinnyOrgLinkToggle.active {
+        background-position: 0 0;
+    }
+
+    .imgShadow {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .patientsTab img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pageCaption {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    body {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .whiteTexture {
+        padding-top: 14px;
+        background: #fff;
+    }
+
+    .nextBtn, .topBtn {
+        margin: 20px auto;
+        width: 20px;
+        height: 20px;
+        background-position: -168px -285px;
+    }
+
+    .topBtn {
+        background-position: -142px -285px;
+    }
+
+    .bottomGrayBg {
+        background: none;
+        min-height: 1px;
+        margin-top: 0;
+    }
+
+    #philanthropistWrapper .photoGalleryPage .example-pager2 .cycle-pager-active {
+        background-position: -110px -238px;
+    }
+
+    #philanthropistWrapper .photoGalleryPage .example-pager a {
+        background-position: -89px -238px;
+    }
+
+    .heading {
+        border-bottom: 1px solid #000;
+        padding-bottom: 14px;
+    }
+
+    .patientPagination, .playerVideoGallery .thumbPagination {
+        top: 42px;
+        left: 2%;
+        width: 9px;
+        height: 22px;
+        background-position: -163px -386px;
+    }
+
+    .playerVideoGallery .thumbPagination {
+        top: 12px;
+        background-position: -188px -386px;
+    }
+
+    .playerVideoGallery .thumbPagination.prev {
+        background-position: -200px -386px;
+        right: 2%;
+        left: auto;
+    }
+
+    .patientPagination.prev {
+        right: 2%;
+        background-position: -175px -386px;
+    }
+
+    .thumbnailUl .patientSlide, .thumbnailUl img, .videoGallery .thumbWrap, .videoGallery .thumbWrap img, .videoGallery .thumbWrap:after, .thumbnailUl .defaultCycle-4 .patientSlide, .thumbnailUl .defaultCycle-4 img {
+        width: 66px;
+        height: 42px;
+    }
+
+    .photoGallery .example-pager2 {
+        bottom: 60px;
+    }
+
+    .videoGallery .thumbWrap:after {
+        background: none;
+    }
+
+    .innerMenuInner {
+        height: 200px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .contactDevicesView {
+        width: 242px;
+        margin: 0 auto;
+        font: normal 14px/20px 'Montserrat-Regular';
+        color: #272727;
+    }
+
+    .contactDevicesView strong {
+        font-family: "Montserrat-Bold";
+    }
+
+    .phoneIcon {
+        background-position: 60px -335px;
+    }
+
+    .sponsorsLogos .logosHolder a, .sponsorsLogos .logosHolder span, .logosHolder a, .logosHolder span {
+        margin: 10px;
+    }
+
+    .logosHolder {
+        margin-bottom: 0;
+    }
+
+    .logosHolder a:first-child, .logosHolder span:first-child, .vinnyLogo .logosHolder a:first-child {
+        margin-left: 10px;
+    }
+
+    .logosContainer h3 {
+        margin-bottom: 16px;
+    }
+
+    #statsTableInner1, #statsTableInner2, #statsTableInner3, #statsTableInner4, #statsTableInner5, #statsTableInner6, #statsTableInner7, #statsTableInner8, #statsTableInner9, .January, .February, .March, .April, .May, .June, .July, .August, .September, .October, .November, .December {
+        overflow-y: hidden !important;
+        overflow-x: scroll !important;
+    }
+
+    #scheduleScrollbar, #statsScrollbar, #splitsScrollbar, #gameLogsScrollbar, #tweets {
+        overflow-y: scroll !important;
+        overflow-x: hidden !important;
+    }
+
+    .mCS_destroyed {
+        margin-bottom: 10px;
+    }
+
+    .mCS_destroyed::-webkit-scrollbar-button {
+    }
+
+    .mCS_destroyed::-webkit-scrollbar, .patientTabs::-webkit-scrollbar, #homeScheduleScrollbar::-webkit-scrollbar, #tweets::-webkit-scrollbar, .innerMenuInner::-webkit-scrollbar, .January::-webkit-scrollbar, .February::-webkit-scrollbar, .March::-webkit-scrollbar, .April::-webkit-scrollbar, .May::-webkit-scrollbar, .June::-webkit-scrollbar, .July::-webkit-scrollbar, .August::-webkit-scrollbar, .September::-webkit-scrollbar, .October::-webkit-scrollbar, .November::-webkit-scrollbar, .December::-webkit-scrollbar, #statsTableInner1::-webkit-scrollbar, #statsTableInner2::-webkit-scrollbar, #statsTableInner3::-webkit-scrollbar, #statsTableInner4::-webkit-scrollbar, #statsTableInner5::-webkit-scrollbar, #statsTableInner6::-webkit-scrollbar, #statsTableInner7::-webkit-scrollbar, #statsTableInner8::-webkit-scrollbar, #statsTableInner9::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    .mCS_destroyed::-webkit-scrollbar-track, .patientTabs::-webkit-scrollbar-track, #homeScheduleScrollbar::-webkit-scrollbar-track, #tweets::-webkit-scrollbar-track, .innerMenuInner::-webkit-scrollbar-track, .January::-webkit-scrollbar-track, .February::-webkit-scrollbar-track, .March::-webkit-scrollbar-track, .April::-webkit-scrollbar-track, .May::-webkit-scrollbar-track, .June::-webkit-scrollbar-track, .July::-webkit-scrollbar-track, .August::-webkit-scrollbar-track, .September::-webkit-scrollbar-track, .October::-webkit-scrollbar-track, .November::-webkit-scrollbar-track, .December::-webkit-scrollbar-track, #statsTableInner1::-webkit-scrollbar-track, #statsTableInner2::-webkit-scrollbar-track, #statsTableInner3::-webkit-scrollbar-track, #statsTableInner4::-webkit-scrollbar-track, #statsTableInner5::-webkit-scrollbar-track, #statsTableInner6::-webkit-scrollbar-track, #statsTableInner7::-webkit-scrollbar-track, #statsTableInner8::-webkit-scrollbar-track, #statsTableInner9::-webkit-scrollbar-track {
+        width: 8px;
+        height: 8px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        background: #555;
+        filter: "alpha(opacity=40)";
+        -ms-filter: "alpha(opacity=40)";
+    }
+    .mCS_destroyed::-webkit-scrollbar-thumb, .patientTabs::-webkit-scrollbar-thumb, #homeScheduleScrollbar::-webkit-scrollbar-thumb, #tweets::-webkit-scrollbar-thumb, .innerMenuInner::-webkit-scrollbar-thumb, .January::-webkit-scrollbar-thumb, .February::-webkit-scrollbar-thumb, .March::-webkit-scrollbar-thumb, .April::-webkit-scrollbar-thumb, .May::-webkit-scrollbar-thumb, .June::-webkit-scrollbar-thumb, .July::-webkit-scrollbar-thumb, .August::-webkit-scrollbar-thumb, .September::-webkit-scrollbar-thumb, .October::-webkit-scrollbar-thumb, .November::-webkit-scrollbar-thumb, .December::-webkit-scrollbar-thumb, #statsTableInner1::-webkit-scrollbar-thumb, #statsTableInner2::-webkit-scrollbar-thumb, #statsTableInner3::-webkit-scrollbar-thumb, #statsTableInner4::-webkit-scrollbar-thumb, #statsTableInner5::-webkit-scrollbar-thumb, #statsTableInner6::-webkit-scrollbar-thumb, #statsTableInner7::-webkit-scrollbar-thumb, #statsTableInner8::-webkit-scrollbar-thumb, #statsTableInner9::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background: #FFF;
+        background: rgba(255, 255, 255, 0.75);
+        filter: "alpha(opacity=75)";
+        -ms-filter: "alpha(opacity=75)";
+    }
+    .mCS_destroyed::-webkit-scrollbar-thumb:hover, .patientTabs::-webkit-scrollbar-thumb:hover, #homeScheduleScrollbar::-webkit-scrollbar-thumb:hover, #tweets::-webkit-scrollbar-thumb:hover, .innerMenuInner::-webkit-scrollbar-thumb:hover, .January::-webkit-scrollbar-thumb:hover, .February::-webkit-scrollbar-thumb:hover, .March::-webkit-scrollbar-thumb:hover, .April::-webkit-scrollbar-thumb:hover, .May::-webkit-scrollbar-thumb:hover, .June::-webkit-scrollbar-thumb:hover, .July::-webkit-scrollbar-thumb:hover, .August::-webkit-scrollbar-thumb:hover, .September::-webkit-scrollbar-thumb:hover, .October::-webkit-scrollbar-thumb:hover, .November::-webkit-scrollbar-thumb:hover, .December::-webkit-scrollbar-thumb:hover, #statsTableInner1::-webkit-scrollbar-thumb:hover, #statsTableInner2::-webkit-scrollbar-thumb:hover, #statsTableInner3::-webkit-scrollbar-thumb:hover, #statsTableInner4::-webkit-scrollbar-thumb:hover, #statsTableInner5::-webkit-scrollbar-thumb:hover, #statsTableInner6::-webkit-scrollbar-thumb:hover, #statsTableInner7::-webkit-scrollbar-thumb:hover, #statsTableInner8::-webkit-scrollbar-thumb:hover, #statsTableInner9::-webkit-scrollbar-thumb:hover {
+        background: #FFF;
+        background: rgba(255, 255, 255, 255);
+        filter: "alpha(opacity=100)";
+        -ms-filter: "alpha(opacity=100)";
+    }
+
+    .patientTabs::-webkit-scrollbar-track, .philanthropistWrapper .innerMenuInner::-webkit-scrollbar-track {
+        background: #cbcbcb;
+    }
+
+    .patientTabs::-webkit-scrollbar-thumb, .philanthropistWrapper .innerMenuInner::-webkit-scrollbar-thumb {
+        background: #666;
+    }
+
+    .patientTabs::-webkit-scrollbar-thumb:hover, .philanthropistWrapper .innerMenuInner::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .loadingImage {
+        top: 4%;
+        left: 30%;
+    }
+
+    #scheduleScrollbar, #statsScrollbar, #splitsScrollbar, #gameLogsScrollbar {
+        overflow: auto !important;
+        max-height: inherit;
+    }
+
+    #homeScheduleScrollbar {
+        overflow-x: scroll;
+        margin-bottom: 20px;
+    }
+
+    .contentToggleBtn {
+        display: block;
+        background: #000;
+        border: 1px solid #343434;
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+        -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.20);
+        font: normal 14px/20px 'playbold';
+        text-transform: uppercase;
+        padding: 6px 12px;
+        margin: 0 10px 10px;
+        color: #fff;
+        text-align: left;
+    }
+
+    .contentToggleBtn:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contentToggleBtn i {
+        display: inline-block;
+        width: 11px;
+        height: 5px;
+        float: right;
+        margin-top: 8px;
+        background: url(../img/sprite.png) -187px -33px no-repeat;
+    }
+
+    .contentToggleBtn.active i {
+        background-position: -201px -33px;
+    }
+
+    .philanthropistWrapper .contentToggleBtn {
+        background: #ededed;
+        border: 1px solid #cbcbcb;
+        color: #000;
+    }
+
+    .philanthropistWrapper .contentToggleBtn:hover {
+        color: #000;
+    }
+
+    .philanthropistWrapper .contentToggleBtn i {
+        background-position: -187px -43px;
+    }
+
+    .philanthropistWrapper .contentToggleBtn.active i {
+        background-position: -201px -43px;
+    }
+
+    .pageContentWrapper {
+        /*display: none;*/
+    }
+
+    .meetVinny, .newsPage, .philanthropistWrapper section {
+        min-height: 0;
+    }
+
+    .contactUsPage {
+        padding-top: 0;
+    }
+
+    .philanthropistWrapper .topBtn {
+        height: 50px;
+        margin-bottom: 0;
+    }
+
+    .showDesktop {
+        display: none !important;
+    }
+
+    .showIpad {
+        display: block !important;
+    }
+
+    .showIpad a {
+        display: block;
+    }
+
+    .vinnyLogo {
+        display: none;
+    }
+
+    .foundationFooter .vinnyLogo{
+        display: block;
+    }
+
+    .foundationFooter .vinnyLogo .logosHolder {
+        display: none;
+    }
+
+    footer {
+        border-top: 16px solid #000;
+    }
+
+    .foundationFooter {
+        border-top: none;
+    }
+
+    .listing th:last-child, .listing td:last-child, .table th, .table td, .listing thead th:last-child {
+        padding: 4px;
+    }
+
+    .listing thead th:first-child, .listing th:first-child, .listing td:first-child, .listing thead th {
+        padding: 4px;
+    }
+
+    .listing thead {
+        font-size: 14px;
+    }
+
+    .grayBtn {
+        padding: 4px 20px;
+    }
+
+    .mediumHeading, .btmLine {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .newsList {
+        margin-top: 12px;
+    }
+
+    .awardsContainer .heading {
+        margin: 20px 0;
+    }
+
+    .awardsList {
+        background: none;
+        padding: 0;
+    }
+
+    .table {
+        margin-bottom: 10px;
+    }
+
+    .subNavWrapper {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .subNavWrapper {
+        margin-bottom: 20px;
+    }
+
+    #home .bottomBorder {
+        display: none;
+    }
+
+    .mediaPage .subNavWrapper {
+        margin-top: 10px;
+    }
+
+    .stats .subNavWrapper, .scheduleForm, .tableWrapper {
+        margin-top: 18px;
+    }
+
+    .tableWrapper .mediumHeading {
+        padding-bottom: 4px;
+    }
+
+    .newsPage .heading {
+        margin: 10px 0;
+    }
+
+    .textureBg {
+        padding: 20px 0;
+    }
+
+    .photoGalleryPage .nextBtn {
+        margin-top: 30px;
+    }
+
+    .vsMenu {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        z-index: 999999;
+        width: 85%;
+        right: -85%;
+    }
+
+    .relativeHeader {
+        position: relative;
+    }
+
+    .sliderOuter.marginTop {
+        margin-top: 0;
+    }
+
+    .showIphone {
+        display: block !important;
+    }
+
+    .textureBg .logosHolder {
+        margin: 0 0 10px -20px;
+    }
+
+    .patientTabs {
+        max-height: inherit;
+        overflow: visible;
+        background: url("../img/title-glow.png") top center no-repeat;
+        padding: 20px 6px 0 6px;
+    }
+
+    .glowEffect {
+        background: url("../img/title-glow.png") top center no-repeat;
+        min-height: 40px;
+        padding: 20px 0 0 10px;
+    }
+
+    .meetVinnyContent {
+        margin: 0;
+    }
+
+    /* Footer icons */
+
+    .media li, .media a i {
+        width: 34px;
+    }
+
+    .media a i {
+        background-size: 140px;
+        padding-top: 42px;
+        margin-left: 10px;
+    }
+
+    .media .facebook i {
+        background-position: 7px 0;
+    }
+
+    .media .facebook:hover i {
+        background-position: 7px -62px;
+    }
+
+    .media .twitter i {
+        background-position: -41px 0;
+        margin-left: 4px;
+    }
+
+    .media .twitter:hover i {
+        background-position: -41px -60px;
+    }
+
+    .media .instagram i {
+        background-position: -234px 0;
+    }
+
+    .media .instagram:hover i {
+        background-position: -234px -64px;
+    }
+
+    .subNavWrapper .nav {
+        top: 3px;
+    }
+
+    .mediaPage .subNavWrapper .nav {
+        top: 0;
+    }
+
+    .mediaPage .aboveTexture {
+        background-position: 0 13px;
+    }
+
+    .media {
+        margin-left: -36px;
+    }
+
+    .media li:last-child {
+        margin-left: 50px;
+    }
+
+    .styledSelect {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .listing td:last-child {
+        width: auto;
+    }
+
+    .listing th, .listing td {
+        width: 20%;
+    }
+
+}
+
+@media (max-width: 480px){
+    body {
+        min-width: 320px;
+        font-size: 12px;
+    }
+    .searchForm .searchBtnSmall {
+        left: 88%;
+    }
+
+    #teamLogoMenu .newListSelected {
+        width: 186px !important;
+        background: url(http://www.nhl.com/images/default/networkNavBg.png) 0 0 no-repeat !important;
+    }
+
+    #teamLogoMenu .selectedTxt {
+        width: 186px !important;
+    }
+
+    #teamLogoMenu .newListSelected {
+        float: none !important;
+        margin-top: 10px !important;
+    }
+
+    #teamLogoMenu .teamList {
+        width: 320px !important;
+    }
+
+    header .navbar .container {
+        margin-top: 0;
+    }
+
+    .navbar .nav>li>a {
+        padding: 10px !important;
+    }
+
+    .media li {
+        margin-left: 40px;
+    }
+
+    .vinnyStats img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .meetVinnyContent, .withIcons div {
+        margin: 0;
+    }
+
+    header .navbar .nav {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .whiteLinks {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .innerMenuWrapper {
+        width: 100%;
+    }
+
+    .innerMenu {
+        /*margin-right: -220px;*/
+    }
+
+    .statsBox h2 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .vinnyStats img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .vinnyStats .vinnyInfo span, .plainText {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .vinnyStats .vinnyInfo h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .vinnyStats .vinnyInfo {
+        width: 62%;
+    }
+
+    .meetVinnyImg p {
+        width: auto;
+    }
+
+    .meetVinnyImg:after {
+        display: none;
+    }
+
+    .searchForm .searchBtn, .searchForm .searchIcon, .submitIcon, .searchForm .searchBtnSmall {
+        background: url("../img/search-icon.png") 0 0 no-repeat;
+        width: 18px;
+        height: 18px;
+        top: 34px;
+        left: 86%;
+    }
+
+    .searchForm input {
+        left: 34px;
+        top: 28px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .photoGallery div, .photoGallery .middleColumn {
+        /*float: none;
+        width: auto;*/
+    }
+
+    .photoGallery div img, .photoGallery .middleColumn img {
+        /*height: auto;
+        border: 4px solid #fff;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }*/
+
+    .philanthropistWrapper .photoGallery div img, .philanthropistWrapper .photoGallery .middleColumn img {
+        border-color: #e7e7e7;
+    }
+
+    .photoGallery {
+        background: transparent;
+        padding: 0;
+    }
+
+    .videoTabBox iframe {
+        height: 200px;
+    }
+
+    .photoGallery .middleColumn {
+        margin: 0;
+    }
+
+    .photoGallery .example-pager a:first-child {
+        margin-top: 0;
+    }
+
+    .photoGallery a:first-child {
+        margin-top: 4%;
+    }
+
+    .subNavWrapper .nav-pills>li>a {
+        padding: 10px 14px;
+    }
+
+    .subNavWrapper .nav li {
+        margin-left: 4px;
+    }
+
+    #teamLogoMenu {
+        width: auto !important;
+    }
+
+    header .navbar {
+        background: #000;
+    }
+
+    .ipadLeftVinny {
+        left: -280px;
+    }
+
+    .ipadLeftVinny .vinnyOrgLink {
+        width: 280px;
+        height: 120px;
+        background: url(../img/vinny-iphone-left.png) 0 0 no-repeat;
+    }
+
+    .ipadLeftVinny .vinnyOrgLinkToggle {
+        width: 18px;
+        height: 120px;
+        background: url(../img/vinny-iphone-left-btns.png) 0 0 no-repeat;
+    }
+
+    .ipadLeftVinny .vinnyOrgLinkToggle.active {
+        background-position: -18px 0;
+    }
+
+    .vinnyNewsList .lessNewsBlock img {
+        width: 102px;
+        height: 102px;
+        margin: 0 14px 10px 0;
+    }
+
+    .scheduleForm .control-group, .scheduleForm .orangeBtn.small, .innerTabs .scheduleForm .control-group {
+        margin-left: 0;
+    }
+
+    .media li:first-child {
+        margin-left: -50px;
+    }
+
+    .scheduleForm .control-group {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .orangeBtn {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 8px 16px;
+    }
+
+    .scheduleForm h4, .scheduleForm .fieldsWrapper {
+        float: none;
+    }
+
+/*    .slider, .slider img {
+        height: 150px !important;
+    }*/
+
+    #tab2 .scheduleForm .control-group, #tab3 .scheduleForm .control-group {
+        width: 100%;
+    }
+
+    .orangeBtn, .orangeBtn.small {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    /* ---------------------- Philanthropist ---------------------- */
+
+    .sliderCaptions h2 {
+        font-size: 16px;
+        line-height: 18px;
+        position: relative;
+        top: 1px;
+    }
+
+    .sliderCaptions {
+        width: 270px;
+        left: 10px;
+    }
+
+    .ipadRightVinny {
+        right: -280px;
+    }
+
+    .ipadRightVinny .vinnyOrgLink {
+        width: 280px;
+        height: 120px;
+        background: url(../img/vinny-iphone-right.png) 0 0 no-repeat;
+    }
+
+    .ipadRightVinny .vinnyOrgLinkToggle {
+        width: 18px;
+        height: 120px;
+        background: url(../img/vinny-iphone-left-btns.png) -18px 0 no-repeat;
+    }
+
+    .ipadRightVinny .vinnyOrgLinkToggle.active {
+        background-position: 0 0;
+    }
+
+    .leftSide span, .rightSide span {
+        display: block;
+        font: normal 14px/16px 'Montserrat-Regular';
+        position: absolute;
+        top: 42%;
+        left: 2%;
+    }
+
+    .patientsTab h4 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .photoGalleryPage .example-pager2 {
+        bottom: 62px;
+    }
+
+    .prevSlider {
+        top: 42%;
+    }
+
+    .bigHeading {
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+/*    #aboutVinny .leftImg, #aboutVinny .rightImg {
+        width: auto;
+        float: none;
+        margin: 0;
+    }*/
+
+    .notFoundErrorWrap {
+        padding: 40px 0;
+        height: auto;
+    }
+
+    .notFoundErrorWrap h1 {
+        font-size: 28px;
+    }
+
+    .notFoundErrorWrap img {
+        width: 50%;
+    }
+
+    .vinnyLogo .logosHolder a, .vinnyLogo .logosHolder span {
+        margin: 10px;
+    }
+
+    .bottomBorder {
+        margin: 10px 0;
+    }
+
+    .boxesWrapper {
+        margin: 20px 0 0;
+    }
+
+    .vinnyStatsContainer {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .imgShadow {
+        margin: 0 6px 6px 0;
+        padding: 0;
+    }
+
+    .titleBlock {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .mediaPage .subNavWrapper {
+        margin-top: 18px;
+    }
+
+    .media {
+        margin-left: auto;
+    }
+
+    .media li:last-child {
+        margin-left: 30px;
+    }
+
+    .textureBg .logosHolder img {
+        width: 80%;
+    }
+}
